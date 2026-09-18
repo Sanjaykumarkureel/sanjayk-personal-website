@@ -97,4 +97,34 @@ footer .wordmark { color:var(--ink); } footer > a:last-child { color:var(--red);
   font-size: 14px;
   line-height: 1.65;
 }
+.contact-details {
+margin-top: 28px;
+display: grid;
+gap: 17px;
+}
+
+.contact-details p {
+margin: 0;
+font-size: 14px;
+line-height: 1.55;
+}
+
+.contact-details strong {
+font-family: "DM Mono", monospace;
+font-size: 10px;
+letter-spacing: .08em;
+text-transform: uppercase;
+color: #ffd4d8;
+}
+
+.contact-details a {
+color: white;
+text-decoration: underline;
+text-underline-offset: 3px;
+}
+
+.contact-details a:hover {
+opacity: .8;
+}
+
 @media (max-width:760px) { .site-header, main, footer { margin:0 24px; }.site-header { height:75px; } nav { gap:15px; font-size:12px; } h1 { font-size:45px; }.hero { padding:75px 0; }.domains { padding-bottom:75px; }.domains .section-heading { display:block; }.domains-intro { margin-top:16px; }.domain-grid { grid-template-columns:1fr; }.domain-card { min-height:230px; }.domain-card h3 { margin-top:28px; }.featured { grid-template-columns:1fr; }.featured-label { padding:25px 0 0; border:none; }.featured article { padding:26px 0 34px; }.featured h2 { font-size:33px; }.writing { padding:75px 0; }.post-grid { grid-template-columns:1fr; }.about { grid-template-columns:1fr; gap:35px; padding:65px 0; }.contact { grid-template-columns:1fr; gap:28px; padding:55px 28px; }.contact h2 { font-size:33px; }.section-heading h2,.about h2 { font-size:35px; } footer { min-height:140px; flex-direction:column; justify-content:center; gap:15px; text-align:center; } }
