@@ -12,7 +12,15 @@ nav a { color:#797474; position:relative; }
 nav .active, nav a:hover { color:var(--ink); }
 nav .active::after { content:""; height:2px; background:var(--red); position:absolute; left:0; right:0; bottom:-13px; }
 .hero { padding:116px 0 109px; max-width:790px; }
-.eyebrow, .post-meta { margin:0; color:var(--red); font-family:"DM Mono", monospace; font-size:11px; font-weight:500; letter-spacing:.09em; text-transform:uppercase; }
+.hero-question {
+  margin: 0 0 18px;
+  color: var(--ink);
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: -.03em;
+  line-height: 1.1;
+}
 h1, h2, h3, p { margin-top:0; }
 h1, h2, h3 { font-family:"Playfair Display", serif; font-weight:700; letter-spacing:-.04em; }
 h1 { margin:18px 0 25px; font-size:67px; line-height:1.06; }
