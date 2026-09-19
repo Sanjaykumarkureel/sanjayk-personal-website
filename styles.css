@@ -31,14 +31,65 @@ h1 em { color:var(--red); font-weight:600; }
 .button { display:inline-flex; align-items:center; gap:24px; margin-top:20px; padding:15px 19px; background:var(--red); color:white; font-size:14px; font-weight:700; transition:.2s ease; }
 .button:hover { background:var(--deep-red); transform:translateY(-2px); }
 .button span, .text-link span, .post-card a span { font-size:19px; line-height:0; }
-.domains { padding:0 0 112px; }
-.domains .section-heading { align-items:flex-end; margin-bottom:37px; }
-.domains-intro { max-width:290px; margin:0; color:var(--muted); font-size:14px; line-height:1.6; }
-.domain-grid { display:grid; grid-template-columns:repeat(3, 1fr); border-top:1px solid var(--ink); border-left:1px solid var(--ink); }
-.domain-card { min-height:292px; position:relative; padding:26px 27px; border-right:1px solid var(--ink); border-bottom:1px solid var(--ink); transition:.2s ease; }
-.domain-card:hover { background:#f8eded; }.domain-number { color:var(--red); font:500 11px "DM Mono", monospace; letter-spacing:.08em; }
-.domain-card h3 { margin:38px 0 11px; font-size:30px; line-height:1.08; }.domain-card p { max-width:225px; color:var(--muted); font-size:14px; line-height:1.55; }
-.domain-arrow { position:absolute; right:26px; bottom:20px; color:var(--red); font-size:23px; }.red-domain { background:var(--red); color:white; }.red-domain:hover { background:var(--deep-red); }.red-domain .domain-number,.red-domain .domain-arrow { color:white; }.red-domain p { color:#ffe8e8; }
+.domains {
+  padding: 90px 0 112px;
+  border-top: 1px solid var(--line);
+}
+
+.domains .section-heading {
+  margin-bottom: 45px;
+}
+
+.domains .section-heading h2 {
+  margin: 0;
+  font-size: 48px;
+  line-height: 1.12;
+}
+
+.domain-list {
+  border-top: 1px solid var(--ink);
+}
+
+.domain-item {
+  display: grid;
+  grid-template-columns: 80px 1fr 40px;
+  gap: 25px;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--ink);
+  transition: .2s ease;
+}
+
+.domain-item:hover {
+  padding-left: 10px;
+  background: #f8eded;
+}
+
+.domain-number {
+  color: var(--red);
+  font: 500 11px "DM Mono", monospace;
+  letter-spacing: .08em;
+}
+
+.domain-item h3 {
+  margin: 0 0 8px;
+  font-size: 29px;
+  line-height: 1.15;
+}
+
+.domain-item p {
+  max-width: 650px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.domain-arrow {
+  color: var(--red);
+  font-size: 25px;
+  text-align: right;
+}
 .featured { display:grid; grid-template-columns:28% 72%; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); }
 .featured-label { padding:34px 34px 0 0; border-right:1px solid var(--line); }
 .issue { margin-top:12px; color:var(--muted); font-size:12px; }
