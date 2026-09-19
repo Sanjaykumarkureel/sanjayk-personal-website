@@ -35,7 +35,75 @@ h1 em { color:var(--red); font-weight:600; }
   padding: 90px 0 112px;
   border-top: 1px solid var(--line);
 }
+.science {
+  padding: 105px 0 115px;
+  border-top: 1px solid var(--line);
+}
 
+.science .section-heading {
+  display: grid;
+  grid-template-columns: 1fr 290px;
+  gap: 60px;
+  align-items: end;
+  margin-bottom: 55px;
+}
+
+.science .section-heading h2 {
+  max-width: 850px;
+  margin: 0;
+  font-size: 54px;
+  line-height: 1.08;
+}
+
+.science .domains-intro {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.science-intro {
+  max-width: 780px;
+  margin-bottom: 70px;
+}
+
+.science-intro p {
+  margin: 0;
+  font-size: 23px;
+  line-height: 1.55;
+}
+
+.science-questions {
+  border-top: 1px solid var(--ink);
+}
+
+.science-questions article {
+  display: grid;
+  grid-template-columns: 70px 330px 1fr;
+  gap: 30px;
+  padding: 34px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.science-questions article > span {
+  color: var(--red);
+  font: 500 11px "DM Mono", monospace;
+  letter-spacing: .08em;
+}
+
+.science-questions h3 {
+  margin: 0;
+  font-size: 27px;
+  line-height: 1.2;
+}
+
+.science-questions p {
+  max-width: 600px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
 .domains .section-heading {
   margin-bottom: 45px;
 }
