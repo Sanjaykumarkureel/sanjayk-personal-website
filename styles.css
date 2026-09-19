@@ -320,8 +320,12 @@ h1 em { color:var(--red); font-weight:600; }
 .about .section-heading h2 {
   max-width: 850px;
   margin: 0;
+  font-family: "Playfair Display", serif;
   font-size: 54px;
+  font-weight: 700;
   line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--ink);
 }
 
 .about-grid {
