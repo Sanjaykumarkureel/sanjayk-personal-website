@@ -12,16 +12,21 @@ nav a { color:#797474; position:relative; }
 nav .active, nav a:hover { color:var(--ink); }
 nav .active::after { content:""; height:2px; background:var(--red); position:absolute; left:0; right:0; bottom:-13px; }
 .hero { padding:116px 0 109px; max-width:790px; }
-.hero-question {
-  display: block !important;
-  margin: 0 0 18px !important;
-  color: var(--ink) !important;
-  font-family: "Playfair Display", serif !important;
-  font-size: 38px !important;
-  font-weight: 700 !important;
-  letter-spacing: -.03em !important;
-  line-height: 1.1 !important;
-  text-transform: none !important;
+.hero h1 {
+  max-width: 900px;
+  margin: 0 0 28px;
+  font-family: "Playfair Display", serif;
+  font-size: 67px;
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -.035em;
+  color: var(--ink);
+}
+
+.hero h1 em {
+  color: var(--red);
+  font-style: italic;
+  font-weight: 700;
 }
 h1, h2, h3, p { margin-top:0; }
 h1, h2, h3 { font-family:"Playfair Display", serif; font-weight:700; letter-spacing:-.04em; }
