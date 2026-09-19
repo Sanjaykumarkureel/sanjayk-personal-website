@@ -13,13 +13,13 @@ nav .active, nav a:hover { color:var(--ink); }
 nav .active::after { content:""; height:2px; background:var(--red); position:absolute; left:0; right:0; bottom:-13px; }
 .hero { padding:116px 0 109px; max-width:790px; }
 .hero h1 {
-  max-width: 900px;
-  margin: 0 0 28px;
+  max-width: 1000px;
+  margin: 0 0 32px;
   font-family: "Playfair Display", serif;
-  font-size: 67px;
+  font-size: 72px;
   font-weight: 700;
   line-height: 1.02;
-  letter-spacing: -.035em;
+  letter-spacing: -0.035em;
   color: var(--ink);
 }
 
