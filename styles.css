@@ -308,6 +308,94 @@ h1 em { color:var(--red); font-weight:600; }
   font-size: 15px;
   line-height: 1.7;
 }
+.notes {
+  padding: 105px 0 115px;
+  border-top: 1px solid var(--line);
+}
+
+.notes .section-heading {
+  display: grid;
+  grid-template-columns: 1fr 290px;
+  gap: 60px;
+  align-items: end;
+  margin-bottom: 55px;
+}
+
+.notes .section-heading h2 {
+  max-width: 850px;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.notes .domains-intro {
+  margin: 0;
+  color: var(--muted);
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.notes-list {
+  border-top: 1px solid var(--ink);
+}
+
+.note-item {
+  display: grid;
+  grid-template-columns: 70px 1fr 40px;
+  gap: 30px;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--line);
+  transition: .2s ease;
+}
+
+.note-item:hover {
+  padding-left: 10px;
+  background: #f8eded;
+}
+
+.note-number {
+  color: var(--red);
+  font: 500 11px "DM Mono", monospace;
+  letter-spacing: .08em;
+}
+
+.note-meta {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font: 500 11px "DM Mono", monospace;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.note-item h3 {
+  margin: 0 0 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.note-item p:not(.note-meta) {
+  max-width: 650px;
+  margin: 0;
+  color: var(--muted);
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.note-arrow {
+  color: var(--red);
+  font-size: 25px;
+  text-align: right;
+}
 .about {
   padding: 105px 0 115px;
   border-top: 1px solid var(--line);
