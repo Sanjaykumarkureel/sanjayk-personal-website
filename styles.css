@@ -11,16 +11,19 @@ nav { display:flex; gap:29px; font-size:14px; font-weight:600; }
 nav a { color:#797474; position:relative; }
 nav .active, nav a:hover { color:var(--ink); }
 nav .active::after { content:""; height:2px; background:var(--red); position:absolute; left:0; right:0; bottom:-13px; }
-.hero { padding:116px 0 109px; max-width:790px; }
-.hero h1 {
+.hero {
+  padding: 116px 0 109px;
   max-width: 1000px;
+}
+
+.hero h1 {
   margin: 0 0 32px;
   font-family: "Playfair Display", serif;
   font-size: 72px;
   font-weight: 700;
-  line-height: 1.02;
-  letter-spacing: -0.035em;
-  color: var(--ink);
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+  color: #202020;
 }
 
 .hero h1 em {
