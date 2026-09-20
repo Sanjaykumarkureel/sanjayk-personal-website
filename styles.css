@@ -29,13 +29,13 @@ nav .active::after { content:""; height:2px; background:var(--red); position:abs
 }
 
 .hero-photo {
-  width: 280px;
+  width: 210px;
 }
 
 .hero-photo img {
   display: block;
   width: 100%;
-  height: 340px;
+  height: 250px;
   object-fit: cover;
   object-position: center top;
 }
