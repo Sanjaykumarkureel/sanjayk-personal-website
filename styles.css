@@ -1,138 +1,213 @@
-:root { --red:#b10d22; --deep-red:#8f0a1b; --ink:#202020; --muted:#6f6b69; --paper:#fffdfa; --line:#e8e1dd; --blush:#f8eded; }
-* { box-sizing:border-box; }
-html { scroll-behavior:smooth; }
-body { margin:0; color:var(--ink); background:var(--paper); font-family:"DM Sans", sans-serif; }
-a { color:inherit; text-decoration:none; }
-.site-header, main, footer { max-width:1180px; margin:auto; }
-.site-header { height:91px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); }
-.wordmark { font-family:"Playfair Display", serif; font-size:25px; font-weight:700; letter-spacing:-1px; }
-.wordmark span { color:var(--red); }
-nav { display:flex; gap:29px; font-size:14px; font-weight:600; }
-nav a { color:#797474; position:relative; }
-nav .active, nav a:hover { color:var(--ink); }
-nav .active::after { content:""; height:2px; background:var(--red); position:absolute; left:0; right:0; bottom:-13px; }
-.hero {
-  padding: 116px 0 109px;
-  max-width: 1000px;
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,700&display=swap');
+
+:root {
+  --red: #b10d22;
+  --deep-red: #8f0a1b;
+  --ink: #202020;
+  --muted: #6f6b69;
+  --paper: #fffdfa;
+  --line: #e8e1dd;
+  --blush: #f8eded;
 }
 
-.hero {
-  padding: 90px 0 100px;
-  max-width: 1100px;
-  display: grid;
-  grid-template-columns: 1fr 280px;
-  gap: 70px;
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "DM Sans", sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* =========================================================
+   GLOBAL LAYOUT
+   ========================================================= */
+
+.site-header,
+main,
+footer {
+  width: min(1180px, calc(100% - 80px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+  min-height: 86px;
+  display: flex;
   align-items: center;
-}
-.hero-content {
-  min-width: 0;
-}
-
-.hero-photo {
-  width: 210px;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
 }
 
-.hero-photo img {
-  display: block;
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  object-position: center top;
-}
-.hero h1 em {
-  color: var(--red);
-  font-style: italic;
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
   font-weight: 700;
 }
-h1, h2, h3, p { margin-top:0; }
-h1, h2, h3 { font-family:"Playfair Display", serif; font-weight:700; letter-spacing:-.04em; }
-h1 { margin:18px 0 25px; font-size:67px; line-height:1.06; }
-h1 em { color:var(--red); font-weight:600; }
-.intro { max-width:590px; color:var(--muted); font-size:18px; line-height:1.7; }
-.button { display:inline-flex; align-items:center; gap:24px; margin-top:20px; padding:15px 19px; background:var(--red); color:white; font-size:14px; font-weight:700; transition:.2s ease; }
-.button:hover { background:var(--deep-red); transform:translateY(-2px); }
-.button span, .text-link span, .post-card a span { font-size:19px; line-height:0; }
-.domains {
-  padding: 90px 0 112px;
-  border-top: 1px solid var(--line);
-}
-.science {
-  padding: 105px 0 115px;
-  border-top: 1px solid var(--line);
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
-.science .section-heading {
+nav a {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--red);
+}
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  color: var(--ink);
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: var(--red);
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.section-heading {
   display: grid;
-  grid-template-columns: 1fr 290px;
+  grid-template-columns: minmax(0, 1fr) 290px;
   gap: 60px;
   align-items: end;
   margin-bottom: 55px;
 }
 
-.science .section-heading h2 {
+.section-heading h2 {
   max-width: 850px;
   margin: 0;
+  font-family: "Playfair Display", serif;
   font-size: 54px;
+  font-weight: 700;
   line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--ink);
 }
 
-.science .domains-intro {
+.domains-intro {
   margin: 0;
   color: var(--muted);
+  font-family: "DM Sans", sans-serif;
   font-size: 15px;
   line-height: 1.6;
 }
 
-.science-intro {
-  max-width: 780px;
-  margin-bottom: 70px;
-}
+/* =========================================================
+   HERO / LANDING PAGE
+   ========================================================= */
 
-.science-intro p {
-  margin: 0;
-  font-size: 23px;
-  line-height: 1.55;
-}
-
-.science-questions {
-  border-top: 1px solid var(--ink);
-}
-
-.science-questions article {
+.hero {
+  min-height: 600px;
+  padding: 90px 0 100px;
   display: grid;
-  grid-template-columns: 70px 330px 1fr;
-  gap: 30px;
-  padding: 34px 0;
-  border-bottom: 1px solid var(--line);
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 70px;
+  align-items: center;
 }
 
-.science-questions article > span {
+.hero-content {
+  min-width: 0;
+}
+
+.hero h1 {
+  margin: 0 0 32px;
+  font-family: "Playfair Display", serif;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+}
+
+.hero h1 em {
   color: var(--red);
-  font: 500 11px "DM Mono", monospace;
-  letter-spacing: .08em;
+  font-style: italic;
+  font-weight: 700;
 }
 
-.science-questions h3 {
-  margin: 0;
-  font-size: 27px;
-  line-height: 1.2;
-}
-
-.science-questions p {
-  max-width: 600px;
-  margin: 0;
+.hero .intro {
+  max-width: 680px;
+  margin: 0 0 32px;
   color: var(--muted);
-  font-size: 15px;
-  line-height: 1.7;
-}
-.domains .section-heading {
-  margin-bottom: 45px;
+  font-size: 19px;
+  line-height: 1.65;
 }
 
-.domains .section-heading h2 {
-  margin: 0;
-  font-size: 48px;
-  line-height: 1.12;
+.hero-photo {
+  width: 280px;
+}
+
+.hero-photo img {
+  display: block;
+  width: 280px;
+  height: 340px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  background: var(--red);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.button:hover {
+  background: var(--deep-red);
+}
+
+/* =========================================================
+   AREAS OF INTEREST
+   ========================================================= */
+
+.domains {
+  padding: 90px 0 112px;
+  border-top: 1px solid var(--line);
 }
 
 .domain-list {
@@ -141,8 +216,8 @@ h1 em { color:var(--red); font-weight:600; }
 
 .domain-item {
   display: grid;
-  grid-template-columns: 80px 1fr 40px;
-  gap: 25px;
+  grid-template-columns: 70px minmax(0, 1fr) 40px;
+  gap: 30px;
   align-items: center;
   padding: 30px 0;
   border-bottom: 1px solid var(--ink);
@@ -151,7 +226,7 @@ h1 em { color:var(--red); font-weight:600; }
 
 .domain-item:hover {
   padding-left: 10px;
-  background: #f8eded;
+  background: var(--blush);
 }
 
 .domain-number {
@@ -179,35 +254,80 @@ h1 em { color:var(--red); font-weight:600; }
   font-size: 25px;
   text-align: right;
 }
-.human-behaviour {
+
+/* =========================================================
+   SCIENCE
+   ========================================================= */
+
+.science {
   padding: 105px 0 115px;
   border-top: 1px solid var(--line);
 }
 
-.human-behaviour .section-heading {
-  display: grid;
-  grid-template-columns: 1fr 290px;
-  gap: 60px;
-  align-items: end;
-  margin-bottom: 55px;
-}
-
-.human-behaviour .section-heading h2 {
-  max-width: 850px;
-  margin: 0;
-  font-size: 54px;
-  line-height: 1.08;
-}
-
+.science-intro,
 .human-behaviour-intro {
   max-width: 780px;
   margin-bottom: 70px;
 }
 
+.science-intro p,
 .human-behaviour-intro p {
   margin: 0;
+  font-family: "DM Sans", sans-serif;
   font-size: 23px;
   line-height: 1.55;
+  color: var(--ink);
+}
+
+.science-questions {
+  border-top: 1px solid var(--ink);
+}
+
+.science-questions article {
+  display: grid;
+  grid-template-columns: 70px 330px minmax(0, 1fr);
+  gap: 30px;
+  padding: 34px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.science-questions article > span {
+  color: var(--red);
+  font: 500 11px "DM Mono", monospace;
+  letter-spacing: .08em;
+}
+
+.science-questions h3,
+.human-behaviour-questions h3,
+.writing-questions h3,
+.note-item h3 {
+  margin: 0 0 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.science-questions p,
+.human-behaviour-questions p,
+.writing-questions p,
+.note-item p:not(.note-meta) {
+  max-width: 600px;
+  margin: 0;
+  color: var(--muted);
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   HUMAN BEHAVIOUR
+   ========================================================= */
+
+.human-behaviour {
+  padding: 105px 0 115px;
+  border-top: 1px solid var(--line);
 }
 
 .human-behaviour-questions {
@@ -216,7 +336,7 @@ h1 em { color:var(--red); font-weight:600; }
 
 .human-behaviour-questions article {
   display: grid;
-  grid-template-columns: 70px 1fr;
+  grid-template-columns: 70px minmax(0, 1fr);
   gap: 30px;
   padding: 30px 0;
   border-bottom: 1px solid var(--line);
@@ -228,49 +348,13 @@ h1 em { color:var(--red); font-weight:600; }
   letter-spacing: .08em;
 }
 
-.human-behaviour-questions h3 {
-  margin: 0;
-  font-size: 27px;
-  line-height: 1.2;
-}
-.featured { display:grid; grid-template-columns:28% 72%; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); }
-.featured-label { padding:34px 34px 0 0; border-right:1px solid var(--line); }
-.issue { margin-top:12px; color:var(--muted); font-size:12px; }
-.featured article { padding:44px 60px 49px; }
-.category { margin:0 0 11px; color:var(--red); font-size:13px; font-weight:700; }
-.featured h2 { font-size:41px; margin-bottom:14px; }
-.featured article > p:not(.category) { max-width:640px; color:var(--muted); font-size:16px; line-height:1.7; }
-.text-link { display:inline-flex; align-items:center; gap:10px; margin-top:10px; color:var(--red); font-size:14px; font-weight:700; }
+/* =========================================================
+   SCIENTIFIC WRITING
+   ========================================================= */
+
 .writing {
   padding: 105px 0 115px;
   border-top: 1px solid var(--line);
-}
-
-.writing .section-heading {
-  display: grid;
-  grid-template-columns: 1fr 290px;
-  gap: 60px;
-  align-items: end;
-  margin-bottom: 55px;
-}
-
-.writing .section-heading h2 {
-  max-width: 850px;
-  margin: 0;
-  font-family: "Playfair Display", serif;
-  font-size: 54px;
-  font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: -0.02em;
-  color: var(--ink);
-}
-
-.writing .domains-intro {
-  margin: 0;
-  color: var(--muted);
-  font-family: "DM Sans", sans-serif;
-  font-size: 15px;
-  line-height: 1.6;
 }
 
 .writing-intro {
@@ -292,7 +376,7 @@ h1 em { color:var(--red); font-weight:600; }
 
 .writing-questions article {
   display: grid;
-  grid-template-columns: 70px 1fr;
+  grid-template-columns: 70px minmax(0, 1fr);
   gap: 30px;
   padding: 30px 0;
   border-bottom: 1px solid var(--line);
@@ -304,53 +388,13 @@ h1 em { color:var(--red); font-weight:600; }
   letter-spacing: .08em;
 }
 
-.writing-questions h3 {
-  margin: 0 0 10px;
-  font-family: "Playfair Display", serif;
-  font-size: 27px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--ink);
-}
+/* =========================================================
+   NOTES & ESSAYS
+   ========================================================= */
 
-.writing-questions p {
-  max-width: 600px;
-  margin: 0;
-  color: var(--muted);
-  font-family: "DM Sans", sans-serif;
-  font-size: 15px;
-  line-height: 1.7;
-}
 .notes {
   padding: 105px 0 115px;
   border-top: 1px solid var(--line);
-}
-
-.notes .section-heading {
-  display: grid;
-  grid-template-columns: 1fr 290px;
-  gap: 60px;
-  align-items: end;
-  margin-bottom: 55px;
-}
-
-.notes .section-heading h2 {
-  max-width: 850px;
-  margin: 0;
-  font-family: "Playfair Display", serif;
-  font-size: 54px;
-  font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: -0.02em;
-  color: var(--ink);
-}
-
-.notes .domains-intro {
-  margin: 0;
-  color: var(--muted);
-  font-family: "DM Sans", sans-serif;
-  font-size: 15px;
-  line-height: 1.6;
 }
 
 .notes-list {
@@ -359,7 +403,7 @@ h1 em { color:var(--red); font-weight:600; }
 
 .note-item {
   display: grid;
-  grid-template-columns: 70px 1fr 40px;
+  grid-template-columns: 70px minmax(0, 1fr) 40px;
   gap: 30px;
   align-items: center;
   padding: 30px 0;
@@ -369,7 +413,7 @@ h1 em { color:var(--red); font-weight:600; }
 
 .note-item:hover {
   padding-left: 10px;
-  background: #f8eded;
+  background: var(--blush);
 }
 
 .note-number {
@@ -386,52 +430,19 @@ h1 em { color:var(--red); font-weight:600; }
   text-transform: uppercase;
 }
 
-.note-item h3 {
-  margin: 0 0 10px;
-  font-family: "Playfair Display", serif;
-  font-size: 27px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--ink);
-}
-
-.note-item p:not(.note-meta) {
-  max-width: 650px;
-  margin: 0;
-  color: var(--muted);
-  font-family: "DM Sans", sans-serif;
-  font-size: 15px;
-  line-height: 1.7;
-}
-
 .note-arrow {
   color: var(--red);
   font-size: 25px;
   text-align: right;
 }
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+
 .about {
   padding: 105px 0 115px;
   border-top: 1px solid var(--line);
-}
-
-.about .section-heading {
-  margin-bottom: 55px;
-}
-
-.about .section-heading h2 {
-  max-width: 850px;
-  margin: 0;
-  font-family: "Playfair Display", serif;
-  font-size: 54px;
-  font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: -0.02em;
-  color: var(--ink);
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr;
 }
 
 .about-main {
@@ -455,136 +466,224 @@ h1 em { color:var(--red); font-weight:600; }
 .about-main strong {
   color: var(--ink);
 }
-.contact { display:grid; grid-template-columns:1fr 1fr; gap:80px; padding:82px 72px; background:var(--red); color:white; }
-.contact .eyebrow { color:#ffd4d8; }.contact h2 { margin:12px 0 0; font:700 40px/1.12 "Playfair Display"; letter-spacing:-.04em; }
-.contact-copy { align-self:end; }.contact-copy p { margin:0; font-size:17px; line-height:1.65; }.contact-note { margin-top:21px !important; color:#ffd4d8; font-size:13px !important; }
-footer { border-top:1px solid var(--line); min-height:100px; display:flex; align-items:center; justify-content:space-between; color:var(--muted); font-size:12px; }
-footer .wordmark { color:var(--ink); } footer > a:last-child { color:var(--red); font-weight:700; }
+
+/* =========================================================
+   PERSONAL PRINCIPLES
+   ========================================================= */
+
 .principles {
-  padding: 100px 0;
+  padding: 105px 0 115px;
   border-top: 1px solid var(--line);
 }
 
-.principles > h2 {
-  margin: 12px 0 42px;
-  font: 700 44px/1.1 "Playfair Display";
-  letter-spacing: -.04em;
+.principle-list {
+  border-top: 1px solid var(--ink);
 }
 
-.principles-grid {
+.principle-item {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: 70px minmax(0, 1fr);
+  gap: 30px;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--line);
 }
 
-.principles article {
-  padding: 28px;
-  border-top: 3px solid var(--red);
-  background: var(--blush);
-}
-
-.principles span {
+.principle-number {
   color: var(--red);
-  font: 500 11px "DM Mono";
+  font: 500 11px "DM Mono", monospace;
+  letter-spacing: .08em;
 }
 
-.principles h3 {
-  margin: 30px 0 12px;
-  font-size: 27px;
-}
-
-.principles p {
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.65;
-}
-.contact-details {
-margin-top: 28px;
-display: grid;
-gap: 17px;
-}
-
-.contact-details p {
-margin: 0;
-font-size: 14px;
-line-height: 1.55;
-}
-
-.contact-details strong {
-font-family: "DM Mono", monospace;
-font-size: 10px;
-letter-spacing: .08em;
-text-transform: uppercase;
-color: #ffd4d8;
-}
-
-.contact-details a {
-color: white;
-text-decoration: underline;
-text-underline-offset: 3px;
-}
-
-.contact-details a:hover {
-opacity: .8;
-}
-
-@media (max-width:760px) { .site-header, main, footer { margin:0 24px; }.site-header { height:75px; } nav { gap:15px; font-size:12px; } h1 { font-size:45px; }.hero { padding:75px 0; }.domains { padding-bottom:75px; }.domains .section-heading { display:block; }.domains-intro { margin-top:16px; }.domain-grid { grid-template-columns:1fr; }.domain-card { min-height:230px; }.domain-card h3 { margin-top:28px; }.featured { grid-template-columns:1fr; }.featured-label { padding:25px 0 0; border:none; }.featured article { padding:26px 0 34px; }.featured h2 { font-size:33px; }.writing { padding:75px 0; }.post-grid { grid-template-columns:1fr; }.about { grid-template-columns:1fr; gap:35px; padding:65px 0; }.contact { grid-template-columns:1fr; gap:28px; padding:55px 28px; }.contact h2 { font-size:33px; }.section-heading h2,.about h2 { font-size:35px; } footer { min-height:140px; flex-direction:column; justify-content:center; gap:15px; text-align:center; } }
-/* =========================================================
-   CONSISTENT TYPOGRAPHY SYSTEM
-   ========================================================= */
-
-.section-heading h2 {
-  margin: 0;
-  font-family: "Playfair Display", serif;
-  font-size: 54px;
-  font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: -0.02em;
-  color: var(--ink);
-}
-
-.section-heading {
-  display: grid;
-  grid-template-columns: 1fr 290px;
-  gap: 60px;
-  align-items: end;
-  margin-bottom: 55px;
-}
-
-.domains-intro {
-  margin: 0;
-  color: var(--muted);
-  font-family: "DM Sans", sans-serif;
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-.science-questions h3,
-.human-behaviour-questions h3,
-.writing-questions h3,
-.note-item h3 {
+.principle-item h3 {
   margin: 0 0 10px;
-  font-family: "Playfair Display", serif;
   font-size: 27px;
-  font-weight: 700;
   line-height: 1.2;
-  color: var(--ink);
 }
 
-.science-questions p,
-.human-behaviour-questions p,
-.writing-questions p,
-.note-item p:not(.note-meta) {
-  font-family: "DM Sans", sans-serif;
+.principle-item p {
+  max-width: 600px;
+  margin: 0;
+  color: var(--muted);
   font-size: 15px;
   line-height: 1.7;
+}
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.contact {
+  padding: 70px 0;
+  border-top: 1px solid var(--line);
+}
+
+.contact h2 {
+  margin: 0 0 20px;
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.contact p {
   color: var(--muted);
 }
 
-.science-intro p,
-.human-behaviour-intro p {
-  font-family: "DM Sans", sans-serif;
-  font-size: 23px;
-  line-height: 1.55;
-  color: var(--ink);
+.contact a {
+  color: var(--red);
+}
+
+.contact a:hover {
+  color: var(--deep-red);
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  .site-header,
+  main,
+  footer {
+    width: calc(100% - 48px);
+  }
+
+  .site-header {
+    min-height: 75px;
+  }
+
+  nav {
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  nav a {
+    font-size: 11px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 65px 0 75px;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .hero-photo,
+  .hero-photo img {
+    width: 220px;
+  }
+
+  .hero-photo img {
+    height: 275px;
+  }
+
+  .section-heading {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .section-heading h2 {
+    font-size: 35px;
+  }
+
+  .domains-intro {
+    margin-top: 16px;
+  }
+
+  .domain-item {
+    grid-template-columns: 45px minmax(0, 1fr) 25px;
+    gap: 15px;
+  }
+
+  .domain-item h3 {
+    font-size: 25px;
+  }
+
+  .science,
+  .human-behaviour,
+  .writing,
+  .notes,
+  .about,
+  .principles {
+    padding: 75px 0;
+  }
+
+  .science-intro,
+  .human-behaviour-intro,
+  .writing-intro {
+    margin-bottom: 50px;
+  }
+
+  .science-intro p,
+  .human-behaviour-intro p {
+    font-size: 20px;
+  }
+
+  .science-questions article {
+    grid-template-columns: 45px minmax(0, 1fr);
+    gap: 15px;
+  }
+
+  .science-questions article p {
+    grid-column: 2;
+  }
+
+  .human-behaviour-questions article,
+  .writing-questions article,
+  .principle-item {
+    grid-template-columns: 45px minmax(0, 1fr);
+    gap: 15px;
+  }
+
+  .note-item {
+    grid-template-columns: 45px minmax(0, 1fr) 25px;
+    gap: 15px;
+  }
+
+  .science-questions h3,
+  .human-behaviour-questions h3,
+  .writing-questions h3,
+  .note-item h3,
+  .principle-item h3 {
+    font-size: 24px;
+  }
+
+  .writing-intro p,
+  .about-main p {
+    font-size: 16px;
+  }
+
+  .about-main .about-lead {
+    font-size: 22px;
+  }
+
+  .contact h2 {
+    font-size: 35px;
+  }
+
+  footer {
+    min-height: 140px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+  }
 }
