@@ -64,10 +64,20 @@ footer {
   border-bottom: 1px solid var(--line);
 }
 
-.logo {
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   font-family: "Playfair Display", serif;
   font-size: 25px;
   font-weight: 700;
+}
+
+.brand img {
+  display: block;
+  width: 58px;
+  height: 45px;
+  object-fit: contain;
 }
 
 nav {
