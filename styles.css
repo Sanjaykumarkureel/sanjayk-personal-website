@@ -83,7 +83,13 @@ footer {
   opacity: 1;
   visibility: visible;
 }
+.site-header .brand {
+  flex-shrink: 0;
+}
 
+.site-header .brand img {
+  flex-shrink: 0;
+}
 nav {
   display: flex;
   align-items: center;
