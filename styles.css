@@ -529,3 +529,62 @@ opacity: .8;
 }
 
 @media (max-width:760px) { .site-header, main, footer { margin:0 24px; }.site-header { height:75px; } nav { gap:15px; font-size:12px; } h1 { font-size:45px; }.hero { padding:75px 0; }.domains { padding-bottom:75px; }.domains .section-heading { display:block; }.domains-intro { margin-top:16px; }.domain-grid { grid-template-columns:1fr; }.domain-card { min-height:230px; }.domain-card h3 { margin-top:28px; }.featured { grid-template-columns:1fr; }.featured-label { padding:25px 0 0; border:none; }.featured article { padding:26px 0 34px; }.featured h2 { font-size:33px; }.writing { padding:75px 0; }.post-grid { grid-template-columns:1fr; }.about { grid-template-columns:1fr; gap:35px; padding:65px 0; }.contact { grid-template-columns:1fr; gap:28px; padding:55px 28px; }.contact h2 { font-size:33px; }.section-heading h2,.about h2 { font-size:35px; } footer { min-height:140px; flex-direction:column; justify-content:center; gap:15px; text-align:center; } }
+/* =========================================================
+   CONSISTENT TYPOGRAPHY SYSTEM
+   ========================================================= */
+
+.section-heading h2 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.section-heading {
+  display: grid;
+  grid-template-columns: 1fr 290px;
+  gap: 60px;
+  align-items: end;
+  margin-bottom: 55px;
+}
+
+.domains-intro {
+  margin: 0;
+  color: var(--muted);
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.science-questions h3,
+.human-behaviour-questions h3,
+.writing-questions h3,
+.note-item h3 {
+  margin: 0 0 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.science-questions p,
+.human-behaviour-questions p,
+.writing-questions p,
+.note-item p:not(.note-meta) {
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.science-intro p,
+.human-behaviour-intro p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 23px;
+  line-height: 1.55;
+  color: var(--ink);
+}
