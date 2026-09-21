@@ -76,10 +76,15 @@ footer {
 }
 
 .brand img {
-  width: 32px;
-  height: 32px;
+  display: block;
+  width: 55px;
+  height: auto;
   object-fit: contain;
+  opacity: 1;
+  visibility: visible;
+  flex-shrink: 0;
 }
+
 .site-header .brand {
   flex-shrink: 0;
 }
