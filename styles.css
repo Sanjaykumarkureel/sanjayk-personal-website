@@ -77,14 +77,13 @@ footer {
 
 .brand img {
   display: block;
-  width: 70px;
+  width: 100px;
   height: auto;
   object-fit: contain;
   opacity: 1;
   visibility: visible;
   flex-shrink: 0;
 }
-
 .site-header .brand {
   flex-shrink: 0;
 }
