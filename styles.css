@@ -77,8 +77,9 @@ footer {
 
 .brand img {
   display: block;
-  width: 46px;
-  height: 46px;
+  width: 60px !important;
+  height: 60px !important;
+  max-width: none !important;
   object-fit: contain;
   opacity: 1;
   visibility: visible;
