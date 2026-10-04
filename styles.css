@@ -10,3 +10,8 @@
 .research-feature>*{min-width:0}
 @media(max-width:380px){.feature-copy{padding:24px}.memory-diagram{margin-inline:20px;padding-inline:0}.diagram-path{gap:8px;font-size:10px}.contact-email{font-size:18px}.hero-footnote{flex-direction:column}.light-link span{margin-left:8px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+/* Separate pages keep the first visit focused on the introduction. */
+body{min-height:100vh;display:flex;flex-direction:column}main{flex:1}nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:7px}.inner-page h1{font-size:clamp(40px,4.5vw,61px)}.inner-page h1 em{font-style:normal;color:#527263}.inner-page .contact h1 em{color:#b7cd9c}.inner-page .contact{min-height:calc(100vh - 194px);display:flex;align-items:center}.inner-page .contact>.wrap{width:min(1200px,calc(100% - 96px))}.section-heading h1{margin:0}.home-page .hero{padding-block:60px}.home-page+.wrap{min-height:80px}@media(max-width:760px){.home-page .hero{padding-block:38px}.inner-page .contact>.wrap{width:calc(100% - 40px)}}
+
+.personal-logo{width:90px;height:58px;object-fit:contain;flex-shrink:0}@media(max-width:760px){.personal-logo{width:65px;height:42px}.header-inner .brand{gap:9px}}
