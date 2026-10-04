@@ -1,466 +1,79 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Sanjay K — notes on human behaviour, biology of aging, and scientific writing." />
-    <title>Sanjay K — Curiosity, biology, and clear thinking</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-   <header class="site-header">
-  <a class="brand" href="#">
-    <img src="skk-logo.png" alt="SanjayK logo" />
-    <span>SanjayK</span>
-  </a>
-
-  <nav>
-  <a href="#human-behaviour">Human Behaviour</a>
-  <a href="#science">Science</a>
-  <a href="#writing">Scientific Writing</a>
-  <a href="#notes">Notes & Essays</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-</nav>
-    </header>
-
-    <main id="top">
-      <section class="hero">
-  <div class="hero-content">
-    <h1>
-      Questions about people,<br />
-      Biology<br />
-      <em>and better ideas.</em>
-    </h1>
-
-    <p class="intro">
-      This is where I explore human behaviour, the biology of history and
-      adaptation, and the craft of scientific writing.
-    </p>
-
-    <a class="button" href="#domains">
-      Explore my areas <span>→</span>
-    </a>
-  </div>
-
-  <div class="hero-photo">
-    <img src="Sanjay02.jpg" alt="Sanjay Kureel" />
-  </div>
-</section>
-
-     <section class="domains" id="domains">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">Areas of interest</p>
-      <h2>Three ways I think about<br />people, biology, and ideas.</h2>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sanjay Kureel is an independent researcher exploring cellular memory, mechanobiology and aging, alongside human behaviour and scientific writing.">
+  <meta name="theme-color" content="#173d36">
+  <meta property="og:title" content="Sanjay Kureel — Research, reflection & clear thinking">
+  <meta property="og:description" content="Exploring how cells remember, how people adapt, and how writing brings clarity to ideas.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sanjaykumarkureel.github.io/sanjayk-personal-website/">
+  <title>Sanjay Kureel — Research, reflection & clear thinking</title>
+  <link rel="canonical" href="https://sanjaykumarkureel.github.io/sanjayk-personal-website/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23173d36'/%3E%3Ctext x='32' y='43' text-anchor='middle' fill='%23fff' font-family='Georgia' font-size='34'%3ESK%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="brand" href="#top" aria-label="Sanjay Kureel home"><span class="monogram" aria-hidden="true">SK<span>.</span></span><span>Sanjay Kureel</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span></button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="#science">Research</a><a href="#perspectives">Perspectives</a><a href="#about">About</a><a class="nav-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+      </nav>
     </div>
-  </div>
-
-  <div class="domain-list">
-
-    <a class="domain-item" id="human-behaviour" href="#human-behaviour-section">
-      <span class="domain-number">01</span>
-      <div>
-        <h3>Human Behaviour</h3>
-        <p>Understanding how people think, behave, adapt, and respond to their environment.</p>
+  </header>
+  <main id="main">
+    <section class="hero wrap" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Independent researcher · Chemical engineer</p>
+        <h1 id="hero-title">Curiosity about life.<br><em>Clarity of thought.</em></h1>
+        <p class="hero-intro">I’m Sanjay Kureel. I explore how cells remember, how people adapt, and how writing helps us make sense of complex ideas.</p>
+        <div class="hero-actions"><a class="button" href="#science">Explore my research <span aria-hidden="true">↗</span></a><a class="text-link" href="#about">A little about me <span aria-hidden="true">→</span></a></div>
+        <div class="hero-footnote"><span>Biology. Behaviour. Better questions.</span><a href="https://orcid.org/0000-0003-0562-0316" target="_blank" rel="noopener noreferrer">ORCID profile <span aria-hidden="true">↗</span></a></div>
       </div>
-      <span class="domain-arrow">→</span>
-    </a>
-
-    <a class="domain-item" id="science" href="#science">
-      <span class="domain-number">02</span>
-      <div>
-        <h3>Science</h3>
-        <p>Biology of History and Adaptation</p>
+      <figure class="portrait">
+        <div class="portrait-frame"><img src="https://sanjaykumarkureel.github.io/sanjayk-personal-website/Sanjay02.jpg" alt="Portrait of Sanjay Kureel" width="600" height="740" fetchpriority="high"></div>
+        <figcaption><span>Sanjay Kureel</span><span>Researcher & curious observer</span></figcaption>
+      </figure>
+    </section>
+    <div class="focus-strip"><div class="wrap"><span class="eyebrow">An interconnected perspective</span><span>Cellular memory</span><span>Human behaviour</span><span>Scientific writing</span></div></div>
+    <section class="section wrap research" id="science" aria-labelledby="science-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / Research</p><h2 id="science-title">The past leaves a trace.<br><em>What happens next?</em></h2></div><p>I study the biology of cellular history and adaptation: how past experiences shape a cell’s present state and future response.</p></div>
+      <div class="research-feature">
+        <div class="feature-copy"><p class="eyebrow">A question at the heart of my work</p><h3>Can we reset a cell’s memory to change its future?</h3><p>Mechanical, metabolic and immune signals can leave lasting changes in biological systems. I’m interested in how these memories form, when they support adaptation, and when they contribute to dysfunction.</p><a class="light-link" href="https://orcid.org/0000-0003-0562-0316" target="_blank" rel="noopener noreferrer">Explore my research profile <span aria-hidden="true">↗</span></a></div>
+        <div class="memory-diagram" role="img" aria-label="Conceptual research pathway: past signals lead to a persistent cellular state, which can lead to adaptation or maladaptation. Can that state be reset?">
+          <div class="cell-art" aria-hidden="true"><span class="cell-ring ring-one"></span><span class="cell-ring ring-two"></span><span class="cell-ring ring-three"></span><span class="cell-core"></span><span class="cell-label">CELLULAR MEMORY</span></div>
+          <div class="diagram-path"><span>Experience</span><b aria-hidden="true">→</b><span>Memory</span><b aria-hidden="true">→</b><span>Adaptation</span></div><p>A biological state shaped by what came before.</p>
+        </div>
       </div>
-      <span class="domain-arrow">→</span>
-    </a>
-
-    <a class="domain-item" id="writing" href="#writing">
-      <span class="domain-number">03</span>
-      <div>
-        <h3>Scientific Writing</h3>
-        <p>The craft of communicating scientific ideas.</p>
+      <div class="research-grid">
+        <article><span class="item-number">01</span><h3>How memory forms</h3><p>Understanding how transient signals create persistent changes in cellular behaviour, chromatin and gene expression.</p><span class="topic">Cellular & mechanical memory</span></article>
+        <article><span class="item-number">02</span><h3>How cells adapt</h3><p>Exploring when a remembered experience helps a biological system survive, and when it becomes maladaptive.</p><span class="topic">Adaptation & senescence</span></article>
+        <article><span class="item-number">03</span><h3>What can be reset</h3><p>Investigating the possibility of reversing harmful cellular states by resetting the memories that sustain them.</p><span class="topic">Rejuvenation & mechanosignaling</span></article>
       </div>
-      <span class="domain-arrow">→</span>
-    </a>
-
-  </div>
-</section>
-<section class="science" id="science-section" aria-labelledby="science-title">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">Science</p>
-      <h2 id="science-title">Biology of History and Adaptation</h2>
-    </div>
-    <p class="domains-intro">How biological systems remember, adapt, and survive.</p>
-  </div>
-
-  <div class="science-intro">
-    <p>
-      I study the biology of cellular history and adaptation. How do biological
-      systems remember previous events and their consequences? And how do they
-      use this memory for adaptation and survival?
-    </p>
-  </div>
-
-  <div class="science-questions">
-    <article>
-      <span>01</span>
-      <h3>How is biological memory formed?</h3>
-      <p>
-        Biological systems experience signals that may be mechanical, chemical,
-        physical, infectious, or a combination of these signals. How do these
-        signals induce a new biological state that persists even after the
-        signal has been removed? In general, we call this memory. It may be
-        immune, mechanical, metabolic, or exist across different levels, from
-        the cell to the organ. How are these memories stored?
-      </p>
-    </article>
-
-    <article>
-      <span>02</span>
-      <h3>How does memory influence adaptation?</h3>
-      <p>
-        How do these memories influence the present and future of the system?
-        Does memory always have an advantageous effect, or can it sometimes
-        have deleterious consequences? We also call this maladaptation. What
-        factors affect this memory-driven new biological state?
-      </p>
-    </article>
-
-    <article>
-      <span>03</span>
-      <h3>Can maladaptive memory be reset?</h3>
-      <p>
-        If these memories have deleterious consequences, can they be reset by
-        resetting the altered memory?
-      </p>
-    </article>
-  </div>
-</section>
-
-<section class="human-behaviour" id="human-behaviour-section" aria-labelledby="human-behaviour-title">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">Human Behaviour</p>
-      <h2 id="human-behaviour-title">Understanding people.</h2>
-    </div>
-    <p class="domains-intro">
-      Understanding how people think, behave, adapt, and interact within their social environment.
-    </p>
-  </div>
-
-  <div class="human-behaviour-intro">
-    <p>
-      Humans do not live alone. We live in a niche—a society of other humans.
-      Evolutionarily, humans seek security, accumulate food and other resources
-      for the future, and interact with others based on their interests.
-    </p>
-  </div>
-
-  <div class="human-behaviour-questions">
-    <article>
-      <span>01</span>
-      <div>
-        <h3>What drives human behaviour?</h3>
-        <p>
-          How do security, resources, interests, relationships, and our social
-          environment shape the way people think and behave?
-        </p>
+    </section>
+    <section class="perspectives section" id="perspectives" aria-labelledby="perspectives-title"><div class="wrap">
+      <div class="section-heading"><div><p class="eyebrow">02 / Perspectives</p><h2 id="perspectives-title">Beyond the laboratory.<br><em>The questions connect.</em></h2></div><p>My interests extend from biological systems to the social environments we inhabit and the words we use to understand them.</p></div>
+      <div class="perspective-grid">
+        <article id="human-behaviour"><p class="eyebrow">Human behaviour</p><h3>Understanding people<br>in context.</h3><p>Our relationships, resources and positions within social structures shape how we act. I explore these patterns to ask better questions about the world around us.</p><details><summary>Questions I’m exploring <span aria-hidden="true">+</span></summary><ul><li>How do security, interests and relationships influence behaviour?</li><li>How does our position within a power structure change the way we act?</li><li>Can understanding these patterns help us navigate social life more thoughtfully?</li></ul></details></article>
+        <article id="writing"><p class="eyebrow">Scientific writing</p><h3>Better writing.<br>Clearer thinking.</h3><p>Writing is more than communicating results. It helps us organize our thoughts, notice gaps in our reasoning and develop ideas—especially when working in a second language.</p><details><summary>Questions I’m exploring <span aria-hidden="true">+</span></summary><ul><li>How does putting an idea into words sharpen our thinking?</li><li>What makes a grant, manuscript or review clear and persuasive?</li><li>How can non-native English speakers build confidence and precision in scientific writing?</li></ul></details></article>
       </div>
-    </article>
-
-    <article>
-      <span>02</span>
-      <div>
-        <h3>How does human behaviour change within a power structure?</h3>
-        <p>
-          People behave differently depending on where they stand within a
-          social or institutional structure. Can we identify patterns in their
-          actions, understand their interests, and ask better questions of
-          those who hold power or influence the system?
-        </p>
-      </div>
-    </article>
-
-    <article>
-      <span>03</span>
-      <div>
-        <h3>Can understanding human behaviour make our social world more predictable?</h3>
-        <p>
-          We always deal with other humans—in our families, workplaces, society,
-          laboratories, and friendships. If we understand how people behave,
-          can we better prepare ourselves for the social landscape around us?
-        </p>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section class="writing" id="writing" aria-labelledby="writing-title">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">Scientific Writing</p>
-      <h2 id="writing-title">The craft of scientific writing.</h2>
-    </div>
-    <p class="domains-intro">
-      Writing is not only a way to communicate ideas. It is also a way to think clearly and generate new ideas.
-    </p>
-  </div>
-
-  <div class="writing-intro">
-    <p>
-      Writing is one skill that is involved not only in professional success,
-      but also in personal growth. We write grants, manuscripts, research
-      papers, review articles, and much more.
-    </p>
-
-    <p>
-      But writing does more than communicate our thoughts. It reduces the noise
-      in our thinking. Writing helps us think clearly, organize our thoughts,
-      and generate new ideas.
-    </p>
-
-    <p>
-      People often focus more on speaking, but I think writing is an essential
-      skill, particularly for non-native English speakers. The ability to put
-      an idea into clear and precise words can make a significant difference in
-      how that idea is understood.
-    </p>
-
-    <p>
-      I will regularly write blog posts about scientific writing, how to think
-      through writing, and how we can improve the way we communicate scientific
-      ideas.
-    </p>
-  </div>
-
-  <div class="writing-questions">
-    <article>
-      <span>01</span>
-      <div>
-        <h3>Can writing help us think more clearly?</h3>
-        <p>
-          Writing is not simply a way of communicating what we already know.
-          How does putting our thoughts into words help reduce the noise,
-          organize our thinking, and generate new ideas?
-        </p>
-      </div>
-    </article>
-
-    <article>
-      <span>02</span>
-      <div>
-        <h3>Why is writing an essential scientific skill?</h3>
-        <p>
-          Scientists write grants, manuscripts, research papers, reviews, and
-          many other forms of scientific communication. How can better writing
-          help us communicate our ideas more clearly and effectively?
-        </p>
-      </div>
-    </article>
-
-    <article>
-      <span>03</span>
-      <div>
-        <h3>How can we become better scientific writers?</h3>
-        <p>
-          Scientific writing can be particularly challenging for non-native
-          English speakers. What can we learn, practice, and change to make our
-          scientific writing clearer, more precise, and more meaningful?
-        </p>
-      </div>
-    </article>
-  </div>
-</section>
-<section class="notes" id="notes" aria-labelledby="notes-title">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">Notes & Essays</p>
-      <h2 id="notes-title">Ideas worth exploring.</h2>
-    </div>
-
-    <p class="domains-intro">
-      Thoughts on biology, human behaviour, scientific writing, and the questions that connect them.
-    </p>
-  </div>
-
-  <div class="notes-list">
-
-    <article class="note-item">
-      <span class="note-number">01</span>
-      <div>
-        <p class="note-meta">Biology · September 2026</p>
-        <h3>Can biological systems remember their history?</h3>
-        <p>
-          How previous experiences can create persistent biological states
-          and influence what happens next.
-        </p>
-      </div>
-      <span class="note-arrow">→</span>
-    </article>
-
-    <article class="note-item">
-      <span class="note-number">02</span>
-      <div>
-        <p class="note-meta">Scientific Writing · September 2026</p>
-        <h3>Why writing helps us think</h3>
-        <p>
-          Writing is more than communication. It can reduce the noise in our
-          thinking and help us develop better ideas.
-        </p>
-      </div>
-      <span class="note-arrow">→</span>
-    </article>
-
-    <article class="note-item">
-      <span class="note-number">03</span>
-      <div>
-        <p class="note-meta">Human Behaviour · September 2026</p>
-        <h3>Understanding human behaviour in a social world</h3>
-        <p>
-          How our social environment, interests, relationships, and position
-          within a system influence behaviour.
-        </p>
-      </div>
-      <span class="note-arrow">→</span>
-    </article>
-
-  </div>
-</section>
-<section class="about" id="about" aria-labelledby="about-title">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">About</p>
-      <h2 id="about-title">Who am I?</h2>
-    </div>
-  </div>
-
-  <div class="about-grid">
-    <div class="about-main">
-      <p class="about-lead">
-        I am an independent researcher exploring biology and society through
-        an engineering lens.
-      </p>
-
-      <p>
-        I am trained as a chemical engineer. I completed my doctorate at IIT
-        Bombay, India, where I studied the long-term expansion and maintenance
-        of human mesenchymal stem cells on soft biomaterial surfaces. I showed
-        that soft surfaces not only maintain stemness but also delay
-        replicative senescence.
-      </p>
-
-      <p>
-        An interesting finding from my PhD work was that cells remember and
-        maintain their proliferative and morphological phenotype when rewired
-        on a soft surface and then moved to tissue culture plastic. These
-        findings guided me to pursue my postdoctoral research on the mechanics
-        of senescence and on developing methods to rejuvenate senescent cells
-        instead of eliminating them.
-      </p>
-
-      <p>
-        I have continued to explore the idea of cellular mechanical memory.
-        Like humans, cells can remember past events and use that information
-        to adapt and survive when they encounter similar signals in the future.
-      </p>
-
-      <p>
-        Mechanical memory, however, may be only one form of biological memory.
-        Biological systems can have immune, metabolic, and mechanical memories.
-        When cells encounter these signals, they can undergo changes in
-        epigenetic and gene-expression programs. Some of this information can
-        be stored through changes in chromatin and gene expression,
-        transforming cells into a new biological state.
-      </p>
-
-      <p>
-        This raises a question that I find particularly interesting:
-        <strong>Can a transformed cellular state be reversed by erasing or
-        resetting these memories and returning the cell to a more naïve state?</strong>
-      </p>
-
-      <p>
-        I am also interested in helping people like me—people who may not come
-        from a very strong or privileged background—understand human behaviour
-        and develop scientific writing skills. Writing is a powerful tool for
-        expressing our thoughts, asking better questions, and making our ideas
-        understandable to others.
-      </p>
-
-      <p>
-        Currently, I am developing projects exploring the potential role of
-        mechanosignaling in obesity, weight gain and weight loss, and cellular
-        senescence.
-      </p>
-    </div>
-  </div>
-</section>
-<section class="principles" id="principles">
-  <p class="eyebrow">Personal principles</p>
-  <h2>Three principles I try to live by</h2>
-
-  <div class="principles-grid">
-    <article>
-      <span>01</span>
-      <h3>Seek clarity.</h3>
-      <p>Be clear about your goals, future, relationships, and work. Clarity is the key to good decisions. Cut through the noise and focus on what truly matters.</p>
-    </article>
-    <article>
-      <span>02</span>
-      <h3>Be truthful with yourself.</h3>
-      <p>Never lie to, cheat, or betray yourself. Honest self-reflection may be difficult, but it is the foundation of integrity and growth.</p>
-    </article>
-
-    <article>
-      <span>03</span>
-      <h3>Respect the time difficult things require.</h3>
-      <p>Real skills, meaningful relationships, and lasting understanding take time to build. What is learned patiently tends to stay with you for the long run.</p>
-    </article>
-  </div>
-</section>
-     <section class="contact" id="contact" aria-labelledby="contact-title">
-  <div>
-    <p class="eyebrow">Contact</p>
-    <h2 id="contact-title">Let’s start a thoughtful conversation.</h2>
-  </div>
-
-  <div class="contact-copy">
-    <p>
-      I’m open to conversations about research, mechanobiology, cellular memory,
-      aging, scientific communication, and meaningful collaborations.
-    </p>
-<div class="contact-details">
-  <p><strong>Email</strong><br />
-    <a href="mailto:skkureel113@gmail.com">skkureel113@gmail.com</a>
-  </p>
-
-  <p><strong>Phone</strong><br />
-    <a href="tel:+140999746156">+1 409 997 46156</a>
-  </p>
-
-  <p><strong>Address</strong><br />
-    Huntsville, Alabama, USA
-  </p>
-
-  <p><strong>ORCID</strong><br />
-    <a href="https://orcid.org/0000-0003-0562-0316" target="_blank" rel="noopener">
-      0000-0003-0562-0316
-    </a>
-  </p>
-
-  <p><strong>X</strong><br />
-    <a href="https://x.com/skkureel113" target="_blank" rel="noopener">
-      @skkureel113
-    </a>
-  </p>
-</div>
-
-  </div>
-</section>
-
+      <div class="notes" id="notes"><div><p class="eyebrow">Notes & essays</p><h3>Ideas taking shape.</h3><p>Topics for future essays on biology, behaviour and the craft of writing.</p></div><div class="notes-list"><div><span>Biology</span><p>Can biological systems remember their history?</p><small>Forthcoming</small></div><div><span>Writing</span><p>Why writing helps us think</p><small>Forthcoming</small></div><div><span>Behaviour</span><p>Understanding human behaviour in a social world</p><small>Forthcoming</small></div></div></div>
+    </div></section>
+    <section class="section wrap about" id="about" aria-labelledby="about-title">
+      <div class="about-heading"><p class="eyebrow">03 / About me</p><h2 id="about-title">An engineering lens.<br><em>A biological curiosity.</em></h2><div class="profile-facts"><div><span>Training</span><strong>Chemical engineering</strong></div><div><span>Doctorate</span><strong>IIT Bombay, India</strong></div><div><span>Based in</span><strong>Huntsville, Alabama, USA</strong></div></div></div>
+      <div class="about-copy"><p class="lead">I’m an independent researcher exploring biology and society through an engineering lens.</p><p>During my doctorate at IIT Bombay, I studied the long-term expansion of human mesenchymal stem cells on soft biomaterial surfaces. My work showed that soft surfaces could maintain stemness and delay replicative senescence.</p><p>One finding stayed with me: cells retained aspects of their proliferative and morphological state after moving from a soft surface to tissue culture plastic. That observation led me toward cellular mechanical memory and postdoctoral research on the mechanics of senescence and cell rejuvenation.</p><p>Today, I’m developing projects on the potential role of mechanosignaling in obesity, weight change and cellular senescence.</p><p>I also care about making scientific writing and an understanding of human behaviour more accessible to people whose backgrounds have offered fewer opportunities.</p><a class="text-link" href="https://orcid.org/0000-0003-0562-0316" target="_blank" rel="noopener noreferrer">View my ORCID profile <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <section class="principles wrap" aria-labelledby="principles-title"><p class="eyebrow" id="principles-title">Principles that guide me</p><div class="principles-grid"><article><span>01</span><h3>Seek clarity.</h3><p>Ask better questions. Focus on what matters.</p></article><article><span>02</span><h3>Stay honest.</h3><p>Honest self-reflection is the foundation of growth.</p></article><article><span>03</span><h3>Give it time.</h3><p>Meaningful work and lasting understanding take patience.</p></article></div></section>
+    <section class="contact section" id="contact" aria-labelledby="contact-title"><div class="wrap contact-grid"><div><p class="eyebrow">04 / Let’s connect</p><h2 id="contact-title">Good conversations<br><em>start with curiosity.</em></h2></div><div><p>I welcome conversations about mechanobiology, cellular memory, aging, scientific communication and potential research collaborations.</p><a class="contact-email" href="mailto:skkureel113@gmail.com">skkureel113@gmail.com <span aria-hidden="true">↗</span></a><div class="social-links"><a href="https://orcid.org/0000-0003-0562-0316" target="_blank" rel="noopener noreferrer">ORCID ↗</a><a href="https://x.com/skkureel113" target="_blank" rel="noopener noreferrer">X / Twitter ↗</a></div><p class="location">Huntsville, Alabama, USA</p></div></div></section>
+  </main>
+  <footer class="wrap"><a class="brand" href="#top">Sanjay Kureel<span class="brand-dot">.</span></a><p>Research, reflection & clear thinking.</p><a class="back-top" href="#top">Back to top ↑</a></footer>
+</body>
+</html>
