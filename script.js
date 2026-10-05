@@ -19,3 +19,25 @@ document.addEventListener('keydown', event => {
     menuButton.focus();
   }
 });
+
+const publicationSearch = document.querySelector('#publication-search');
+const publicationType = document.querySelector('#publication-type');
+if (publicationSearch && publicationType) {
+  const publications = Array.from(document.querySelectorAll('.publication'));
+  const count = document.querySelector('#publication-count');
+  const empty = document.querySelector('#publication-empty');
+  function filterPublications() {
+    const query = publicationSearch.value.trim().toLocaleLowerCase();
+    const type = publicationType.value;
+    let visible = 0;
+    publications.forEach(publication => {
+      const matches = (type === 'all' || publication.dataset.publicationType === type) && publication.textContent.toLocaleLowerCase().includes(query);
+      publication.hidden = !matches;
+      if (matches) visible++;
+    });
+    count.textContent = `Showing ${visible} of ${publications.length} entries · newest first`;
+    empty.hidden = visible !== 0;
+  }
+  publicationSearch.addEventListener('input', filterPublications);
+  publicationType.addEventListener('change', filterPublications);
+}
