@@ -1,4 +1,44 @@
 document.documentElement.classList.add('js');
+// Research themes remain visible even when JavaScript is unavailable.
+const showcase = document.querySelector('.research-showcase');
+if (showcase) {
+  const topics = [...showcase.querySelectorAll('.topic-chip')];
+  const play = document.querySelector('#topic-play');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let active = 0;
+  let paused = reducedMotion.matches;
+  let timer;
+  let inView = false;
+  function showTopic(index) {
+    active = index;
+    topics.forEach((topic, i) => topic.setAttribute('aria-pressed', String(i === index)));
+    document.querySelector('#topic-name').textContent = topics[index].textContent.replace(/^\d+/, '');
+    document.querySelector('#topic-question').textContent = topics[index].dataset.question;
+    document.querySelector('#topic-number').textContent = `${String(index + 1).padStart(2, '0')} / ${topics.length}`;
+  }
+  function updatePlayback() {
+    clearInterval(timer);
+    showcase.classList.toggle('is-paused', paused || !inView || document.hidden);
+    play.textContent = paused ? 'Play animation ▷' : 'Pause animation Ⅱ';
+    if (!paused && inView && !document.hidden) timer = setInterval(() => showTopic((active + 1) % topics.length), 6000);
+  }
+  topics.forEach((topic, index) => topic.addEventListener('click', () => {
+    paused = true;
+    document.querySelector('#topic-spotlight').setAttribute('aria-live', 'polite');
+    showTopic(index);
+    updatePlayback();
+  }));
+  play.hidden = false;
+  play.addEventListener('click', () => {
+    paused = !paused;
+    document.querySelector('#topic-spotlight').setAttribute('aria-live', paused ? 'polite' : 'off');
+    updatePlayback();
+  });
+  reducedMotion.addEventListener('change', () => { paused = reducedMotion.matches; updatePlayback(); });
+  document.addEventListener('visibilitychange', updatePlayback);
+  new IntersectionObserver(entries => { inView = entries[0].isIntersecting; updatePlayback(); }, {threshold: 0.15}).observe(showcase);
+  updatePlayback();
+}
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
 function closeMenu() {

@@ -15,8 +15,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=aging-3">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=dynamic-1">
+  <script src="script.js?v=dynamic-1" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -44,7 +44,12 @@
         <figcaption><span>Sanjay Kureel</span><span>Researcher & curious observer</span></figcaption>
       </figure>
     </section>
-    <div class="focus-strip"><div class="wrap"><span class="eyebrow">An interconnected perspective</span><span>Cellular memory</span><span>Human behaviour</span><span>Scientific writing</span></div></div>
+    <section class="research-showcase" aria-labelledby="showcase-title"><div class="wrap">
+      <div class="showcase-heading"><div><p class="eyebrow">An evolving field of questions</p><h2 id="showcase-title">Explore the biology of change.</h2></div><button id="topic-play" type="button" hidden>Pause animation <span aria-hidden="true">Ⅱ</span></button></div>
+      <div class="showcase-layout"><div class="topic-visual" aria-hidden="true"><div class="signal-orbit orbit-a"></div><div class="signal-orbit orbit-b"></div><div class="signal-orbit orbit-c"></div><div class="signal-cell"><span></span><i></i><b></b></div><span class="visual-caption">SENSE · REMEMBER · ADAPT</span></div>
+      <div class="topic-spotlight" id="topic-spotlight" aria-live="off"><p class="topic-position">RESEARCH THEME <span id="topic-number">01 / 11</span></p><h3 id="topic-name">Mechanical memory</h3><p id="topic-question">How does a cell’s mechanical past shape its future?</p><a href="research.html#publications">Explore related research <span aria-hidden="true">↗</span></a></div></div>
+      <div class="topic-grid" role="group" aria-label="Explore research themes"><button type="button" class="topic-chip" data-question="How does a cell’s mechanical past shape its future?" aria-pressed="true" aria-controls="topic-spotlight"><span>01</span>Mechanical memory</button><button type="button" class="topic-chip" data-question="How do changes in cells and tissues accumulate over time?" aria-pressed="false" aria-controls="topic-spotlight"><span>02</span>Aging</button><button type="button" class="topic-chip" data-question="What determines whether a senescent state can be changed?" aria-pressed="false" aria-controls="topic-spotlight"><span>03</span>Senescence</button><button type="button" class="topic-chip" data-question="How do physical forces become biological signals?" aria-pressed="false" aria-controls="topic-spotlight"><span>04</span>Mechanotransduction</button><button type="button" class="topic-chip" data-question="How do cells sense the physical properties of their environment?" aria-pressed="false" aria-controls="topic-spotlight"><span>05</span>Mechanosensing</button><button type="button" class="topic-chip" data-question="How might ferroptosis connect to senescence and aging?" aria-pressed="false" aria-controls="topic-spotlight"><span>06</span>Ferroptosis</button><button type="button" class="topic-chip" data-question="How might biomolecular organization shape cellular state?" aria-pressed="false" aria-controls="topic-spotlight"><span>07</span>Biomolecular condensate</button><button type="button" class="topic-chip" data-question="What helps biological systems maintain function over time?" aria-pressed="false" aria-controls="topic-spotlight"><span>08</span>Longevity</button><button type="button" class="topic-chip" data-question="Can altered cellular states be restored toward healthier function?" aria-pressed="false" aria-controls="topic-spotlight"><span>09</span>Rejuvenation</button><button type="button" class="topic-chip" data-question="How can we influence cellular function without invasive interventions?" aria-pressed="false" aria-controls="topic-spotlight"><span>10</span>Noninvasive methods</button><button type="button" class="topic-chip" data-question="How might cellular history influence the loss of neural function?" aria-pressed="false" aria-controls="topic-spotlight"><span>11</span>Neurodegeneration</button></div><p class="showcase-note">Select a theme to explore. An illustration of connected research interests.</p>
+    </div></section>
   </main>
   <footer class="wrap"><a class="brand" href="index.html">Sanjay Kureel<span class="brand-dot">.</span></a><p>Research, reflection & clear thinking.</p><a class="back-top" href="index.html">Back to home ↑</a></footer>
 </body>
