@@ -3,3 +3,5 @@
 .research-skills-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}.research-skills-grid li{line-height:1.7}.research-skills .skills-intro{max-width:850px}@media(max-width:1000px){.research-skills-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.research-skills-grid{grid-template-columns:1fr}}
 
 .current-research .skills-grid article>p{font-size:15px;line-height:1.75}.current-research .skills-intro{max-width:900px}
+
+.training-grid{grid-template-columns:repeat(2,minmax(0,1fr))}@media(max-width:600px){.training-grid{grid-template-columns:1fr}}
